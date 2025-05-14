@@ -1,6 +1,11 @@
-langchain
-langchain-openai
-langchain-community
-pypdf
-chromadb
-sentence-transformers
+# 基础依赖
+fastapi>=0.95.0
+uvicorn>=0.22.0
+python-dotenv>=1.0.0
+
+# LangChain基础功能
+langchain>=0.0.267
+langchain-community>=0.0.1
+
+# Redis支持
+redis>=4.5.5
