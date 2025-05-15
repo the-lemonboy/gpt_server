@@ -192,7 +192,7 @@ async def chat_endpoint(request: Request):
                 # 记录消息添加情况
                 logger.info(f"已将用户消息和AI响应添加到历史记录，当前历史记录长度: {len(message_history.messages)}")
                 
-                yield f"data: {response}\n\n"
+                yield f"{response}\n\n"
             except Exception as e:
                 logger.error(f"处理请求时出错: {str(e)}")
                 yield f"data: [ERROR] 处理您的请求时出现错误，请稍后再试。\n\n"
